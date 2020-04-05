@@ -8,8 +8,7 @@
              Title="{Binding Title}">
 
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Course:" FontSize="Medium" />
-        <Picker x:Name="NoteCourse" FontSize="Medium">
+        <Picker x:Name="NoteCourse" Title="Note Course" FontSize="Medium">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Course 1</x:String>
@@ -18,11 +17,8 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
-
-        <Label Text="Heading" FontSize="Medium"/>
-        <Entry x:Name="NoteHeading" FontSize="Medium" />
-        <Label Text="Text:" FontSize="Medium" />
-        <Editor x:Name="NoteText" FontSize="Medium"/>
+        <Entry x:Name="NoteHeading" FontSize="Medium" Placeholder="Note Heading"/>
+        <Editor x:Name="NoteText" Placeholder="Note Text" AutoSize="TextChanges" FontSize="Medium"/>
     </StackLayout>
     
 </ContentPage>
