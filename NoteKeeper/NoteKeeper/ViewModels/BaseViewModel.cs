@@ -12,7 +12,9 @@ namespace NoteKeeper.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+
+        public INoteKeeperDataStore NoteKeeperDataStore => DependencyService.Get<INoteKeeperDataStore>() ?? new MockNoteKeeperDataStore();
 
         bool isBusy = false;
         public bool IsBusy

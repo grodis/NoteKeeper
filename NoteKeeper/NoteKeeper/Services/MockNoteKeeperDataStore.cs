@@ -18,7 +18,8 @@ namespace NoteKeeper.Services
             {
                 "Introduction to Xamarin.Forms",
                 "Android Apps with Kotlin: First App",
-                "Managing Android App Data with SQLite"
+                "Managing Android App Data with SQLite",
+                "Building my first Mobile App"
             };
 
             mockNotes = new List<Note>

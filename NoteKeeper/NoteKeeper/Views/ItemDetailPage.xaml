@@ -18,11 +18,11 @@
                 FontSize="Medium">
     
         </Picker>
-        <Entry Text="{Binding Heading}"
+        <Entry Text="{Binding NoteHeading}"
                x:Name="NoteHeading" 
                FontSize="Medium"
                Placeholder="Note Heading"/>
-        <Editor Text="{Binding Text}"
+        <Editor Text="{Binding Note.Text}"
                 x:Name="NoteText" 
                 Placeholder="Note Text"
                 AutoSize="TextChanges"
